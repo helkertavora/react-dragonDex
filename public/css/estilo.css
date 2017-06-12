@@ -1,0 +1,15 @@
+.coluna {
+	float: left;
+	margin: 0.5%;
+	width: 24%;
+
+}
+
+.exibicao {
+
+	margin-top: 70%;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
