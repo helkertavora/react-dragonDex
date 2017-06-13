@@ -8,6 +8,7 @@ class EstoriaForm extends Component {
 				<form className="col s12" onSubmit={this._handleSubmit.bind(this)}>
 					<h5>+1 Personagem</h5>
 						<div className="input-field col s12">
+
 								<input placeholder="Nome" id="nome" ref={ input => this._nome = input} /><br/>
 								<input placeholder="Foto do Personagem" id="foto" ref={ input => this._foto = input} /><br/>
 								<input placeholder="Raça" id="raca" ref={ input => this._raca = input} /><br/>

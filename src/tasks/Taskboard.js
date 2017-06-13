@@ -73,7 +73,9 @@ return estorias.map( estoria =>
             <div className="container">
                 <h1 className="header center orange-text">Dragon Ball Personagens</h1>
               <h3>{this._getTitulo(estorias.length)} </h3>
+                <div className="row">
               	{estorias}
+                </div>
                 <EstoriaForm adicionarEstoria={this._adicionarEstoria.bind(this)} />
             </div>
           </div>); 

@@ -20,23 +20,26 @@ class Estoria extends Component{
     let textoBotao = <i className="material-icons">assignment</i>;
 
     if(this.state.exibirEstoria) {
-      descricao = <p>Personagem: <b>{this.props.nome}</b><br/>
+      descricao = <div className="descricao"><p>Personagem: <b>{this.props.nome}</b><br/>
                   Raça: <b>{this.props.raca}</b><br/>
                   Planeta: <a href="#"><i className="material-icons">language</i> {this.props.planeta}</a><br/>
                   Força: <a href="#"><i className="material-icons">stars</i>{this.props.forca}</a><br/>
                   Habilidades: <b>{this.props.habilidade}</b>
-                  </p>;
+                  </p></div>;
                   
       textoBotao = <i className="material-icons">visibility_off</i>;
       }
 
       //console.log(this.props.descricao);
-
-		return(<div className="coluna">
-            <div className="col s3 m3">
+      ///<span className="card-title">
+      ///</span>
+		return(
+            <div className="col s3">
               <div className="card indigo darken-3">
-                <div className="card-content white-text">
-                    <span className="card-title"><img className="img-circle" src={this.props.foto}  alt="Smiley face" height="100" width="180" /></span>
+                <div className="card-content white-text char">
+                    
+                    <img className="img-circle" src={this.props.foto}  alt="Smiley face" />
+                    
                       {descricao}
                 </div>
                 <div className="card-action">
@@ -49,7 +52,7 @@ class Estoria extends Component{
                 </div>
               </div>
             </div>
-          </div>);
+          );
 	}
 
   _handleDelete(event) {
